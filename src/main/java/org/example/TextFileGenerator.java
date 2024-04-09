@@ -22,10 +22,9 @@ public class TextFileGenerator {
                 int vertices = random.nextInt(120) + 10; // Сгенерируем количество вершин от 10 до 130
                 int edges = random.nextInt(vertices * (vertices - 1) / 2) + 1; // // Случайное количество рёбер
 
-                // Записываем количество вершин и рёбер в файл
                 writer.write(vertices + " " + edges + "\n");
 
-                // Записываем каждое ребро (случайные вершины и вес)
+                // Записываем каждое ребро
                 for (int j = 0; j < edges; j++) {
                     int source = random.nextInt(vertices);
                     int destination = random.nextInt(vertices);
